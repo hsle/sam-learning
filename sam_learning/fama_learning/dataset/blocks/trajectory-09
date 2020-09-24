@@ -1,0 +1,45 @@
+(trajectory
+
+(:objects e -  object b -  object f -  object d -  object c -  object g -  object a - object h - object )
+
+(:init (on b e) (on e f) (ontable g) (on d b) (on c d) (clear c) (handempty ) (ontable f) (on a g) (clear h) (on h a))
+
+(:action (unstack c d))
+
+(:state (on b e) (on e f) (ontable g) (on d b) (ontable f) (on a g) (clear h) (on h a) (holding c) (clear d))
+
+(:action (put-down c))
+
+(:state (on b e) (on e f) (ontable g) (on d b) (ontable f) (on a g) (clear h) (on h a) (clear d) (clear c) (handempty ) (ontable c))
+
+(:action (unstack h a))
+
+(:state (on b e) (on e f) (ontable g) (on d b) (ontable f) (on a g) (clear d) (clear c) (ontable c) (clear a) (holding h))
+
+(:action (put-down h))
+
+(:state (on b e) (on e f) (ontable g) (on d b) (ontable f) (on a g) (clear d) (clear c) (ontable c) (clear a) (clear h) (ontable h) (handempty ))
+
+(:action (pick-up h))
+
+(:state (on b e) (on e f) (ontable g) (on d b) (ontable f) (on a g) (clear d) (clear c) (ontable c) (clear a) (holding h))
+
+(:action (stack h d))
+
+(:state (on b e) (on e f) (ontable g) (on d b) (ontable f) (on a g) (clear c) (ontable c) (clear a) (clear h) (on h d) (handempty ))
+
+(:action (unstack a g))
+
+(:state (on b e) (on e f) (ontable g) (on d b) (ontable f) (clear c) (ontable c) (clear h) (on h d) (clear g) (holding a))
+
+(:action (stack a c))
+
+(:state (on b e) (on e f) (ontable g) (on d b) (ontable f) (ontable c) (clear h) (on h d) (clear g) (clear a) (on a c) (handempty ))
+
+(:action (pick-up g))
+
+(:state (on b e) (on e f) (on d b) (ontable f) (ontable c) (clear h) (on h d) (clear a) (on a c) (holding g))
+
+(:action (put-down g))
+
+(:state (on b e) (on e f) (on d b) (ontable f) (ontable c) (clear h) (on h d) (clear a) (on a c) (ontable g) (clear g) (handempty )))
